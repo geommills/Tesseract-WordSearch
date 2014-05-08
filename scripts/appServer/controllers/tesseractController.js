@@ -18,28 +18,25 @@ var processQuery = function (params, res, sqlTemplate, asGeoJson) {
 	var reporter = asGeoJson === true ? reporters.geoJsonReporter(res) : reporters.jsonReporter(res);
 	var queryManager = new pgQuery.pgQueryExecutor(sqlString, reporter, reporters.errorReporter);
 	queryManager.executeQuery();
+
 };
 
 sqlStrings = {
-	documentsSelectAll: "Select id, filename, pages, '' as instances from documents;",
-	documentsDeleteAll: "Delete from documents;"
+	documentsSelectAll: "Select id, name, pages, content from document;",
+	documentsDeleteAll: "Delete from document;"
 };
 
 exports.getDocuments = function(req, res, next){
-
-	if(req.params.word == undefined)
-		{			
-			processQuery(req.params, res, sqlStrings.documentsSelectAll, true)
-			.then(function (result) {
-				res.send(result);
-				return next();
-			})
-			.otherwise(function (error) {
-				console.log('error' + error);
-				res.send(error);
-				return next(error);
-			});
-		}
+			processQuery(req.params, res, sqlStrings.documentsSelectAll, false);
+			//.then(function (result) {
+			//	res.send(result);
+			//	return next();
+			//})
+			//.otherwise(function (error) {
+			//	console.log('error' + error);
+			//	res.send(error);
+			//	return next(error);
+			//});
 };
 
 
@@ -110,16 +107,7 @@ exports.loadDatabase = function(req, res, next){
 }
 
 exports.clearDatabase = function(req, res, next){
-	processQuery(req.params, res, sqlStrings.documentsDeleteAll, true)
-			.then(function (result) {
-				res.send(result);
-				return next();
-			})
-			.otherwise(function (error) {
-				console.log('error' + error);
-				res.send(error);
-				return next(error);
-			});
+	processQuery(req.params, res, sqlStrings.documentsDeleteAll, true);
 }
 
 exports.getfile = function(file){

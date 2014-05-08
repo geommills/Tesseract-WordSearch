@@ -21,7 +21,6 @@ exports.pgQueryExecutor = function (query, success, error) {
             client.query(query, function (err, result) {
             	console.log(err);
                 if (err) error(errorMessages.postgresQueryError);
-                //console.log(result);
                 success(result);
                 client.end();
             });

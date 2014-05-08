@@ -1,6 +1,7 @@
 ﻿MainApplication.Templates = MainApplication.Templates || {};
 MainApplication.Templates.TesseractTemplate = [
-    "<div id='tesseract'></div>"
+	"<div id='searchDiv' class='container'><input type='text' id='txtWord' placeholder='Search for word occurances'/><button type=\"button\"  id='btnSearch' text='Search' class=\"btn btn-success\">Search</button>",
+    "<div id='grdTesseract' style=\"height: 400px\"></div></div>"
 ].join("\n");
 
 
