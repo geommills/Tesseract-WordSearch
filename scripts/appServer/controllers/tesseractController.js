@@ -4,7 +4,7 @@ var _ = require('lodash');
 var request = require('request');
 var fs = require("fs");
 var when = require("when");
-var pgQuery = require('./../tesseractPgQuery.js');
+var pgQuery = require('./../src/tesseractPgQuery.js');
 var tesseract = require('node-tesseract');
 var data = [];
 
@@ -13,7 +13,7 @@ var processQuery = function (params, res, sqlTemplate, asGeoJson) {
 	var sqlString = us.template(sqlTemplate, params);	
 	var reporter = asGeoJson === true ? reporters.geoJsonReporter(res) : reporters.jsonReporter(res);
 	var queryManager = new pgQuery.pgQueryExecutor(sqlString, reporter, reporters.errorReporter);
-	queryManager.execu]teQuery();
+	queryManager.executeQuery();
 };
 
 sqlStrings = {
@@ -40,11 +40,16 @@ exports.getDocuments = function(req, res, next){
 
 exports.loadDatabase = function(req, res, next){
 
-	var dir='./../../documents/';
+	var dir='./documents/';
 	var data={};
- 
+	console.log("Loading Database Now!");
+ 	var options = {
+	    l: 'eng',
+	    psm: 6,
+	    binary: '/usr/local/bin/tesseract'
+	};
 	fs.readdir(dir,function(err,files){
-    	if (err) throw err;
+    	if (err) console.log(err);
     	var c=0;
     	files.forEach(function(file){
 	        c++;
@@ -53,11 +58,11 @@ exports.loadDatabase = function(req, res, next){
 			        console.error(err);
 			    } else {
 			        console.log(text);
+					res.send("Success!");
 			    }
 			});
     	});
 	});
-	res.send("Success!");
 }
 
 exports.clearDatabase = function(req, res, next){

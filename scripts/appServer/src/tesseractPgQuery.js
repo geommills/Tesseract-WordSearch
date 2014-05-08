@@ -1,5 +1,4 @@
 var pg = require('pg');
-var utilities = require('./utilities.js');
 var us = require('underscore');
 
 var errorMessages = {
@@ -8,7 +7,7 @@ var errorMessages = {
 };
 
 exports.sqlStrings = {
-    wordsearch: ""; 
+    wordsearch: ""
 }
 
 exports.pgQueryExecutor = function (query, success, error) {
