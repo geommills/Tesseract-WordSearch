@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<dataroot>
+<PROJECT>
+<Project_Name>Texas Gas - Bayou Boeuf HDD</Project_Name>
+<GEI_Office>Springfield</GEI_Office>
+<GEI_Client>19273</GEI_Client>
+<GEI_Sequence>012</GEI_Sequence>
+<GEI_Phase>00</GEI_Phase>
+<Proj_City>Morgan City</Proj_City>
+<Proj_State>Louisiana</Proj_State>
+<Input_Units>E</Input_Units>
+<Output_Units>E</Output_Units>
+<Depth_Log_Page></Depth_Log_Page>
+<Proj_Notes></Proj_Notes>
+<DXF_x0020_Aspect_x0020_Ratio></DXF_x0020_Aspect_x0020_Ratio>
+<Blowcount></Blowcount>
+<Recovery>N</Recovery>
+<Confidential>0</Confidential>
+<Location_Pref>Latitude Longitude</Location_Pref>
+<FigureLetter>A-</FigureLetter>
+</PROJECT>
+</dataroot>

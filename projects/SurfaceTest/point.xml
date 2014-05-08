@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<dataroot>
+<POINT>
+<PointID>B-01</PointID>
+<HoleDepth>150</HoleDepth>
+<Exploration_Name>B-1</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation>3</Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>2/5/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>2/5/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>OS</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>JET</Check_By>
+<Drill_Contractor>Specialized Environmental Resources, LLC</Drill_Contractor>
+<Drill_Method_Code>Mud Rotary</Drill_Method_Code>
+<Drill_Equipment_Code>ATV-Mounted Drill Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>Upon completion borehole backfilled full-depth with cement bentonite grout.</Point_Notes>
+<Figure>2</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text>N/A</GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+<POINT>
+<PointID>B-02</PointID>
+<HoleDepth>200</HoleDepth>
+<Exploration_Name>B-2</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation>2</Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>2/6/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>2/7/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>OS</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>JET</Check_By>
+<Drill_Contractor>Specialized Environmental Resources, LLC</Drill_Contractor>
+<Drill_Method_Code>Mud Rotary</Drill_Method_Code>
+<Drill_Equipment_Code>ATV- Mounted Drill Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>Upon completion borehole backfilled full-depth with cement bentonite grout.</Point_Notes>
+<Figure>3</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text>N/A</GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+<POINT>
+<PointID>B-03</PointID>
+<HoleDepth>209</HoleDepth>
+<Exploration_Name>B-3</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation>1</Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>1/27/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>1/27/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>OS</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>JET</Check_By>
+<Drill_Contractor>SER, LLC</Drill_Contractor>
+<Drill_Method_Code>Mud Rotary</Drill_Method_Code>
+<Drill_Equipment_Code>Pontoon Drilling Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>Upon completion borehole backfilled full-depth with cement bentonite grout.</Point_Notes>
+<Figure>4</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text>N/A</GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+<POINT>
+<PointID>B-04</PointID>
+<HoleDepth>200</HoleDepth>
+<Exploration_Name>B-4</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation>4</Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>1/31/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>2/4/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>TRC</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>JET</Check_By>
+<Drill_Contractor>GeoEngineers, Inc.</Drill_Contractor>
+<Drill_Method_Code>Mud Rotary</Drill_Method_Code>
+<Drill_Equipment_Code>Failing 1500 - Truck-Mounted Drill Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>Upon completion borehole backfilled full-depth with cement bentonite grout.</Point_Notes>
+<Figure>5</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text>N/A</GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+<POINT>
+<PointID>B-05</PointID>
+<HoleDepth>200</HoleDepth>
+<Exploration_Name>B-5</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation>7</Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>2/8/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>2/9/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>OS</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>JET</Check_By>
+<Drill_Contractor>Specialized Environmental Resources, LLC</Drill_Contractor>
+<Drill_Method_Code>Mud Rotary</Drill_Method_Code>
+<Drill_Equipment_Code>ATV- Mounted Drill Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>Upon completion borehole backfilled full-depth with cement bentonite grout.</Point_Notes>
+<Figure>6</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text>N/A</GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+<POINT>
+<PointID>B-06</PointID>
+<HoleDepth>150</HoleDepth>
+<Exploration_Name>B-6</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation>6</Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>2/5/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>2/5/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>TRC</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>JET</Check_By>
+<Drill_Contractor>GeoEngineers, Inc.</Drill_Contractor>
+<Drill_Method_Code>Mud Rotary</Drill_Method_Code>
+<Drill_Equipment_Code>Failing 1500 - Truck-Mounted Drill Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>Upon completion borehole backfilled full-depth with cement bentonite grout.</Point_Notes>
+<Figure>7</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text>N/A</GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+<POINT>
+<PointID>B-07</PointID>
+<HoleDepth>200</HoleDepth>
+<Exploration_Name>B-7</Exploration_Name>
+<Exploration_Type>Boring</Exploration_Type>
+<Output_Templ_Code></Output_Templ_Code>
+<Project_Name></Project_Name>
+<GEI_Phase></GEI_Phase>
+<Elevation></Elevation>
+<East></East>
+<North></North>
+<Plunge>-90</Plunge>
+<Plunge_Bearing></Plunge_Bearing>
+<StartDepth>0</StartDepth>
+<Depth_Log_Page></Depth_Log_Page>
+<Date_Drilled>2/11/2014</Date_Drilled>
+<Time_Drilled></Time_Drilled>
+<Date_Comp>2/12/2014</Date_Comp>
+<Time_Comp></Time_Comp>
+<Log_by>OS</Log_by>
+<Log_By_Title></Log_By_Title>
+<Check_By>OJC</Check_By>
+<Drill_Contractor>SER, LLC</Drill_Contractor>
+<Drill_Method_Code><![CDATA[Dry Auger 0' - 5'
+Wet Rotary >5']]></Drill_Method_Code>
+<Drill_Equipment_Code>ARDCO ATV-Mounted Rig</Drill_Equipment_Code>
+<HoleDiameter></HoleDiameter>
+<Backfill_Code></Backfill_Code>
+<Drill_Bit_Code></Drill_Bit_Code>
+<Drill_Fluid_Code></Drill_Fluid_Code>
+<Point_Notes>See Figure A-1 for explanation of symbols.
+Cement-bentonite backfill full depth.</Point_Notes>
+<Figure>B-2</Figure>
+<Hammer_Dat>Safety Hammer/Cathead</Hammer_Dat>
+<Hammer_Wt>140</Hammer_Wt>
+<Hammer_Drp>30</Hammer_Drp>
+<GW_Point_Text></GW_Point_Text>
+<Vapor_Param_Code></Vapor_Param_Code>
+<Proj_City></Proj_City>
+<Proj_State></Proj_State>
+<FigureLetter></FigureLetter>
+<LB1_Heading></LB1_Heading>
+</POINT>
+</dataroot>

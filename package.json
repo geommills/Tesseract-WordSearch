@@ -1,0 +1,35 @@
+{
+  "name": "GeoMapPing",
+  "version": "0.1.0",
+  "author": "SmartMine",
+  "description": "Ping map services and email an admin if they are offline.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeoEngineers/GeoMapPing"
+  },
+  "dependencies" : {
+    "bower" :  "*",
+    "lodash": "*",
+    "underscore" :  "*",
+    "bookshelf"  :  "*",
+    "q" :  "*",
+    "geojson" : "*",
+    "restify" : "*",
+    "minify" : "*",
+    "amazon-ses" : "*",
+    "sqlite3" : "*",
+    "request" : "*",
+    "nodemailer" : "*",
+    "when": "*",
+    "should": "*",
+    "change-case": "*",
+    "node-schedule": "*",
+    "xml2js": "*"
+  },
+  "devDependencies": {
+    "jasmine-node"    :  "*"
+  },
+  "engines": {
+    "node": ">=0.6"
+  }
+}

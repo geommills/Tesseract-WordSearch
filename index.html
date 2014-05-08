@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<title>Your Application</title>
+		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		<link rel="stylesheet" type='text/css' href="./content/jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" type='text/css' href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type='text/css' href="./content/jquery-validationEngine/validationEngine.jquery.css">
+		<link rel="stylesheet" type='text/css' href="./content/fontAwesome/css/font-awesome.css">
+		<link rel="stylesheet" type='text/css' href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' />
+		<link rel="stylesheet" type='text/css' href="./bower_components/jasmine/lib/jasmine-core/jasmine.css">
+		<link rel="stylesheet" type='text/css' href="./content/base.css">
+		<link rel="stylesheet" type='text/css' href="./content/maps.css">
+		
+        <!--[if lte IE 8]>
+		<link rel="stylesheet" type='text/css' href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.ie.css' >
+		<![endif]-->
+        <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans'>
+	</head>
+    <body>
+        <div id="mainBody" class="form-horizontal" style="width: 100%;">
+            <div>
+				<div id="HeaderNavContainer"></div>
+                <!--
+				Disabled proper templating while map is being developed this should be turned on and the map rendered when this app is done -->
+				<div id="ApplicationContainer"></div>
+                <div id="localModalBlock" class="modal" data-backdrop="static"></div>				
+			</div>
+        </div>
+        <footer>
+			<div class="navbar-fixed-bottom">
+				<div class="container">
+					<div id="FooterNavSlideOut" class="accordion-body collapse"></div>
+					<a id="FooterSlideToggle" class="accordion-toggle" data-toggle="collapse" href="#FooterNavSlideOut"></a>
+				</div>
+			</div>
+			<div id="FooterNavContainer"></div>
+        </footer>
+		<div id="loadingDiv"><img src="./content/images/loading_base.gif" /></div>
+
+		<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+        <script type="text/javascript" src="./bower_components/d3/d3.js"></script>
+    
+			
+        <script type="text/javascript" src="./bower_components/js-base64/base64.js"></script>
+        <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="./bower_components/jquery-ui/ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="./bower_components/jquery.cookie/jquery.cookie.js"></script>
+        <script type="text/javascript" src="./bower_components/underscore/underscore.js"></script>
+        <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./bower_components/backbone/backbone.js"></script>
+        <script type="text/javascript" src="./bower_components/ydn-db/jsc/ydn.db-dev.js"></script>
+		<script type="text/javascript" src="./bower_components/momentjs/moment.js"></script>		
+        <script type="text/javascript" src="./bower_components/marionette/lib/backbone.marionette.js"></script>
+        <script type="text/javascript" src="./bower_components/handlebars/handlebars.js"></script>
+		<script type="text/javascript" src="./bower_components/leaflet-providers/leaflet-providers.js"></script>
+		<script type="text/javascript" src="./bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="./bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+        <script type="text/javascript" src="./bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+        <script type="text/javascript" src="./bower_components/backbone-notifications/src/backbone.notificaitons-min.js"></script>
+        <script type="text/javascript" src="./bower_components/es5-basic-shim/src/shim.js"></script>
+        <script type="text/javascript" src="./bower_components/requirejs/require.js">
+        </script><script type="text/javascript" src="http://threejs.org/build/three.min.js"></script>
+        <script type="text/javascript" src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+        <script type="text/javascript" src="http://threejs.org/examples/js/Detector.js"></script>
+        <script type="text/javascript" src="http://threejs.org/examples/js/ImprovedNoise.js"></script>
+        <script type="text/javascript" src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        
+        <script type="text/javascript" src="./scripts/appClient/lib/phonegap/TileLayer.OfflineMBTiles.js"></script>
+
+        <script type="text/javascript" src="./scripts/appClient/src/config/siteConfig.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/extensions/contstructorsExtend.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/extensions/geoSynchQueue.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/extensions/analyticsWrapper.js"></script>		
+        <script type="text/javascript" src="./scripts/appClient/src/extensions/offlineHandler.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/siteMasterTemplates.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/siteMasterViews.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/initSiteMaster.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/routers/applicationRouters.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/regions/applicationRegions.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/models/applicationModels.js"></script>
+        <script type="text/javascript" src="./scripts/appClient/src/pageLoader.js"></script>
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvCZZU_hza7kZHCJ3a3d0oa9SRArGXNew&sensor=true"></script>	
+	</body>
+</html>

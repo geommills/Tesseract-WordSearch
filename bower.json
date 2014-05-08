@@ -1,0 +1,40 @@
+{
+  "name": "EnvironmentalQuality",
+  "version": "0.0.0",
+  "homepage": "https://github.com/GeoEngineers/EnvironmentalQuality",
+  "authors": [
+    "Kevin Burkett <kburkett@geoengineers.com>"
+  ],
+  "description": "Smartmine Environmental Quality",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+	"es5-basic-shim":"*",
+    "underscore": "*",
+    "backbone": "*",
+    "js-base64": "*",
+    "bootstrap": "~3.0.3",
+	"jasmine": "1.3.1",
+    "jquery": "*",
+    "jquery-ui": "*",
+    "jquery.cookie": "*",
+    "backbone.localStorage": "*",
+	"backbone-notifications":"https://github.com/fatiherikli/backbone-notifications.git",
+	"marionette": "*",
+	"momentjs": "*",
+	"handlebars": "*",
+	"leaflet-providers": "*",
+	"bootstrap-datepicker": "*",
+	"requirejs": "*",
+	"ydn-db": "*",
+	"d3": "*",
+  "threejs": "*"
+  }
+}

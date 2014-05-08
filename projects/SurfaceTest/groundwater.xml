@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<dataroot>
+<GROUNDWATER>
+<PointID>B-07</PointID>
+<Depth>0</Depth>
+<Date_Measured>2/11/2014</Date_Measured>
+<Time_Measured></Time_Measured>
+<GW_Point_Code></GW_Point_Code>
+<GW_Type_Code>WTLEV1</GW_Type_Code>
+<GW_Method_Code></GW_Method_Code>
+<Use_Point_Block>-1</Use_Point_Block>
+<Use_Log_Body>-1</Use_Log_Body>
+</GROUNDWATER>
+</dataroot>
