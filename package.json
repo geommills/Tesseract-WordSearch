@@ -24,7 +24,8 @@
     "should": "*",
     "change-case": "*",
     "node-schedule": "*",
-    "xml2js": "*"
+    "xml2js": "*",
+    "node-tesseract": "*"
   },
   "devDependencies": {
     "jasmine-node"    :  "*"
