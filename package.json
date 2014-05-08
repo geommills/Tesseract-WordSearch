@@ -25,7 +25,9 @@
     "change-case": "*",
     "node-schedule": "*",
     "xml2js": "*",
-    "node-tesseract": "*"
+    "node-tesseract": "*",
+    "eyes": "*",
+    "pdf-extract": "*"
   },
   "devDependencies": {
     "jasmine-node"    :  "*"

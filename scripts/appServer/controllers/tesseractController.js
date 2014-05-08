@@ -6,6 +6,9 @@ var fs = require("fs");
 var when = require("when");
 var pgQuery = require('./../src/tesseractPgQuery.js');
 var tesseract = require('node-tesseract');
+var inspect = require('eyes').inspector({maxLength:20000});
+var pdf_extract = require('pdf-extract');
+var inspect = require('eyes').inspector({maxLength:20000});
 var data = [];
 
 
@@ -38,8 +41,10 @@ exports.getDocuments = function(req, res, next){
 		}
 };
 
-exports.loadDatabase = function(req, res, next){
 
+//Assumes you are looking at pdfs - this may be updated to accomidate other filetypes in the future.
+
+exports.loadDatabase = function(req, res, next){
 	var dir='./documents/';
 	var data={};
 	console.log("Loading Database Now!");
@@ -53,15 +58,27 @@ exports.loadDatabase = function(req, res, next){
     	var c=0;
     	files.forEach(function(file){
 	        c++;
-	        tesseract.process(dir+file, options, function(err, text) {
-			    if(err) {
-			        console.error(err);
-			    } else {
-			        console.log(text);
-					res.send("Success!");
-			    }
+
+	        var options = {
+			  type: 'text'  // extract the actual text in the pdf file
+			}
+			var processor = pdf_extract(dir+file, options, function(err) {
+			  if (err) {
+			    return callback(err);
+			  }
+			});
+			processor.on('complete', function(data) {
+			  inspect(data.text_pages, 'extracted text pages');
+			  console.log(text_pages);
+			  callback(null, text_pages);
+			});
+			processor.on('error', function(err) {
+			  inspect(err, 'error while extracting pages');
+			  return callback(err);
 			});
     	});
+    	
+			res.send("Success!");
 	});
 }
 

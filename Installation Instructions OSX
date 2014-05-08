@@ -1,0 +1,17 @@
+Installation Instructions OSX
+
+download and install:
+
+pdftk
+----------------------
+http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.6-setup.pkg
+
+XQuartz
+----------------------
+https://xquartz.macosforge.org/landing/
+
+
+Install using homebrew
+-------------------------
+brew install xpdf
+brew install gs
