@@ -6,7 +6,7 @@ MainApplication.pageInitializer[this_page_name].on("start", function (options) {
 	$('#loadingDiv').css('display',"block");
 	MainApplication.models.tesseractCollection = new TesseractCollection();
 	MainApplication.models.tesseractCollection.fetch({
-			//data: { keyword: 'test'},
+			data: { word: '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'},
 			success: function(){
 				MainApplication.views.tesseractView = new TesseractView({
 					tesseractCollection: MainApplication.models.tesseractCollection

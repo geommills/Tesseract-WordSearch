@@ -22,7 +22,7 @@ var processQuery = function (params, res, sqlTemplate, asGeoJson) {
 };
 
 sqlStrings = {
-	documentsSelectAll: "Select id, name, pages, content from document;",
+	documentsSelectAll: "SELECT a.id, a.name, a.pages, b.patternmatch FROM (Select id, name, pages from document) a LEFT JOIN (SELECT id, COUNT(*) AS patternmatch FROM ( SELECT id,regexp_matches(content, '<%= word %>', 'g') FROM document ) AS alias GROUP BY id) b ON a.id = b.id",
 	documentsDeleteAll: "Delete from document;"
 };
 

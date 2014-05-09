@@ -16,9 +16,9 @@
 
 
     },
-    loadGrid: function(word)
+    loadGrid: function()
     {
-        var data = this.getGridData(word);
+        var data = this.getGridData();
           this.tesseractGrid = new Slick.Grid("#grdTesseract", data, this.getGridColumns(), this.getGridOptions());
           this.tesseractGrid .visible = true;
           this.tesseractGrid .render();
@@ -42,15 +42,39 @@
         };
     },
     searchWord: function(){
-        this.tesseractGrid.destroy();
         var word = $("#txtWord").val();
-        this.loadGrid(word);
+        if(word.length > 2)
+        {
+        var dc= this;
+        if(word === '') word = '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~';
+       $('#loadingDiv').css('display',"block");
+        MainApplication.models.tesseractCollection = new TesseractCollection();
+        MainApplication.models.tesseractCollection.fetch({
+            data: { word: word},
+            success: function(){
+                dc.tesseractGrid.destroy();
+                dc.documents = MainApplication.models.tesseractCollection.models[0];
+                dc.loadGrid();
+                $('#loadingDiv').css('display',"none");
+                return false;
+            },
+            error: function(e){
+                console.log(e);
+                $('#loadingDiv').css('display',"none");
+                return false;
+            }
+        });
+        }
+        else
+        {
+            alert("Words must be longer that 2 letters. Queries will take too long with shorter words.")
+        }
     },
-    getGridData: function (word) {
+    getGridData: function () {
         var data = [];
         
         for (var i = 0; i < this.documents.attributes.rows.length; i++) {
-            var instanceCount = 0;
+            /*var instanceCount = 0;
             if(word !== '') 
             {
                 var regex = new RegExp(word.toLowerCase(), "g");
@@ -58,11 +82,11 @@
                 if(count !== undefined && count !== null)
                     instanceCount = count.length;  
 
-            }
+            }*/
             data.push({
                 name: this.documents.attributes.rows[i].name,
                 pages: this.documents.attributes.rows[i].pages,
-                instances: instanceCount
+                instances: this.documents.attributes.rows[i].patternmatch
             });
         }
         return data;
