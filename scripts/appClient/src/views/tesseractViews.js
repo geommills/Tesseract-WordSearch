@@ -53,8 +53,8 @@
             var instanceCount = 0;
             if(word !== '') 
             {
-                var regex = new RegExp(word, "g");
-                var count = this.documents.attributes.rows[i].content.match(regex);  
+                var regex = new RegExp(word.toLowerCase(), "g");
+                var count = this.documents.attributes.rows[i].content.toLowerCase().match(regex);  
                 if(count !== undefined && count !== null)
                     instanceCount = count.length;  
 
