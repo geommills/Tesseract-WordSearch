@@ -29,7 +29,7 @@
     },
     getGridColumns: function () {
         return [
-            { id: "File Name", name: "File Name", field: "name", minWidth: 126, sortable: true },
+            { id: "File Name", name: "File Name", field: "name", minWidth: 126, minHeight: 40, sortable: true },
             { id: "Pages", name: "Pages", field: "pages", minWidth: 90, sortable: true },
             { id: "Word Instances", name: "Word Instances", field: "instances", minWidth: 120, sortable: true, resizable: true }
         ];
@@ -53,11 +53,12 @@
             var instanceCount = 0;
             if(word !== '') 
             {
-                var count = this.documents.attributes.rows[i].content.match(word);  
-                instanceCount = count.length;  
+                var regex = new RegExp(word, "g");
+                var count = this.documents.attributes.rows[i].content.match(regex);  
+                if(count !== undefined && count !== null)
+                    instanceCount = count.length;  
 
             }
-            console.log(this.documents.attributes.rows[i]);
             data.push({
                 name: this.documents.attributes.rows[i].name,
                 pages: this.documents.attributes.rows[i].pages,

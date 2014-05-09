@@ -1,7 +1,7 @@
 ﻿MainApplication.Templates = MainApplication.Templates || {};
 MainApplication.Templates.TesseractTemplate = [
-	"<div id='searchDiv' class='container'><input type='text' id='txtWord' placeholder='Search for word occurances'/><button type=\"button\"  id='btnSearch' text='Search' class=\"btn btn-success\">Search</button>",
-    "<div id='grdTesseract' style=\"height: 400px\"></div></div>"
+	"<div id='searchDiv' class='container'><span style=\"font-size: 12pt\">Search for word: </span><input type='text' class='form-control' id='txtWord' placeholder='Search for word occurances' style=\"width: 250px; margin: 15px; display: inline-block\"/><button type=\"button\"  id='btnSearch' text='Search' class=\"btn btn-success\">Search</button>",
+    "<div id='grdTesseract' style=\"height: 500px\"></div></div>"
 ].join("\n");
 
 
